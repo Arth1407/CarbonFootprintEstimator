@@ -1,8 +1,8 @@
-# 🌿 MoodPrint: Carbon Footprint Estimator
+# 🌿 MoodPrint: CarbonFootprintEstimator
 
 Simple Python thing that figure out your monthly carbon footprint from how you travel, what you eat, and the energy you use.
 
-About: MoodPrint is just a school project for *Intro to Problem Solving (Python)* class. It ask easy question about your daily life and calculate how much $\text{CO}_2$ you make every month.
+About: MoodPrint is just a  collage project for *Intro to Problem Solving (Python)* class. It ask easy question about your daily life and calculate how much $\text{CO}_2$ you make every month.
 
 How to run it
 
