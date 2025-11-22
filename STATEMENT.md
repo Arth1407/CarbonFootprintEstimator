@@ -1,66 +1,56 @@
-# 🌿 MoodPrint: Carbon Footprint Calculator
+# 🌿 MoodPrint: Carbon Footprint Estimator
 
-A simple Python project that calculates your monthly carbon footprint based on your transport, diet, and energy usage.
+Simple Python thing that figure out your monthly carbon footprint from how you travel, what you eat, and the energy you use.
 
----
+About: MoodPrint is just a school project for *Intro to Problem Solving (Python)* class. It ask easy question about your daily life and calculate how much $\text{CO}_2$ you make every month.
 
-## About
+How to run it
 
-MoodPrint is an educational project for **Introduction to Problem Solving (Python)** course. It asks simple questions about your daily habits and calculates how much CO₂ you produce each month.
+We Need is Python 3
 
----
+How to Run it
 
-## Getting Started
+1.  Download this repo.
+2.  get `main.py` and `factors.py` files.
+3.  Run the code:
 
-### What You Need
-- Python 3.x
+How It Is Working:
 
-### How to Run
-1. Clone or download this repository
-2. Make sure you have `main.py` and `factors.py` in the same folder
-3. Run the program:
-```bash
-python main.py
-```
+The program have three parts:
 
----
+1. Ask Stuff
+    
+  - 🚗 Travel: How you commute (car, bus, train, bicycle, walk)
+  - 🍽️ Grub: What you eat (lotta meat, normal, veggie, vegan)
+  - ⚡ Power: Electricity and heating usage, which is important
 
-## How It Works
+2.  Do the Math
+    Figure out your emissions using these factors :
 
-The program has three parts:
+Travel ($\text{kg CO}_2\text{e}$ per km):
 
-### 1. Ask Questions
-Asks you about:
-- 🚗 **Transport**: How you commute (car, bus, train, bike, walk)
-- 🍽️ **Diet**: What you eat (meat-heavy, average, vegetarian, vegan)
-- ⚡ **Energy**: Electricity and heating usage
+  - Car: 0.2
+  - Bus: 0.1
+  - Train: 0.05
+  - Bike/Walk: 0.0
 
-### 2. Do the Math
-Calculates your emissions using these factors:
+Grub ($\text{kg CO}_2\text{e}$ per month):
 
-**Transport** (kg CO₂e per km):
-- Car: 0.2
-- Bus: 0.1
-- Train: 0.05
-- Bike/Walk: 0.0
+  - Meat Heavy: 250
+  - Average: 150
+  - Vegetarian: 100
+  - Vegan: 75
 
-**Diet** (kg CO₂e per month):
-- Meat Heavy: 250
-- Average: 150
-- Vegetarian: 100
-- Vegan: 75
+Power:
 
-**Energy**:
-- Electricity: 0.5 kg CO₂e per kWh
-- Gas Heating: 100 kg CO₂e per month
-- Electric Heating: 80 kg CO₂e per month
+  - Electricity: 0.5 $\text{kg CO}_2\text{e}$ per kWh
+  - Gas Heating: 100 $\text{kg CO}_2\text{e}$ per month
+  - Electric Heating: 80 $\text{kg CO}_2\text{e}$ per month
 
-### 3. Give Advice
-Shows your total score and gives you tips to improve!
 
----
+3. Advice: Show your score and give quick tips for improvement.
 
-## Example Output
+Exaple:
 
 ```
 🌿 Welcome to MoodPrint!
@@ -78,54 +68,44 @@ What heating do you use? gas
 
 📊 YOUR CARBON FOOTPRINT RESULTS
 
-🚗 Transport:  60.00 kg CO2e/month
-🍽️  Diet:       150.00 kg CO2e/month
-⚡ Energy:     200.00 kg CO2e/month
+🚗 Transport:  60.00 kg CO2e/month
+🍽️  Diet:       150.00 kg CO2e/month
+⚡ Energy:     200.00 kg CO2e/month
 
 🌍 TOTAL SCORE: 410.00 kg CO2e/month
 
-⚠️  Your biggest impact area: Energy
-💡 Tip: Switch to LED bulbs and unplug devices when not in use!
+⚠️  Your biggest problem area: Energy
+💡 Tip: Change to LED light bulbs and unplug things you not use!
 ```
 
----
+Testing:
 
-## Testing
+1.  Crash Test:
+    Input words instead of number, -ve numbers or the wrong choices, it will not crash
 
-### Crash Prevention Test
-Try to break it! Type words instead of numbers, negative numbers, or wrong options. The program should handle it without crashing.
+2.  Math Check
+    Like this: Car, 1 km daily = 1 $\times$ 0.2 $\times$ 30 = 6 $\text{kg CO}_2\text{e}$ 
 
-### Math Check
-**Example**: Car, 1 km daily = 1 × 0.2 × 30 = 6 kg CO₂e ✓
+Files and Stuff:
 
----
+  - `main.py` - Main program
+  - `factors.py` - The factors data
+  - `README.md` - The intro file
+  - `STATEMET.md` - This file
 
-## Files
+Python Skills Used:
 
-- `main.py` - Main program
-- `factors.py` - Emission factors data
-- `README.md` - This file
+  - Functios
+  - Dictionaries and Lists
+  - Error hadling 
+  - Input validation
+  - File imports
+  - Calcultions
 
----
+Thigs we can add:
 
-## Python Skills Used
+  - More ways to travel
+  - Save scores so we can track progress 
+  - Put graphs
 
-- Functions
-- Dictionaries and Lists
-- Error handling (try-except)
-- Input validation
-- File imports
-- Calculations
-
----
-
-## Future Ideas
-
-- Add more transport options
-- Save results to track progress over time
-- Add graphs
-- Compare with friends
-
----
-
-**Made for Introduction to Problem Solving (Python) course** 🌍
+*Made for Introduction to Problem Solving (Python) course* 🌍
