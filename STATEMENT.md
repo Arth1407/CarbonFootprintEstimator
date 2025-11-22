@@ -1,41 +1,131 @@
-Hey, Check Out My Project: MoodPrint - The Carbon Footprint Estimator!
+# 🌿 MoodPrint: Carbon Footprint Calculator
 
-Problem Statement
+A simple Python project that calculates your monthly carbon footprint based on your transport, diet, and energy usage.
 
-Honestly, it's tough to know how much our daily choices—like driving, eating meat, or using the AC—contribute to carbon emissions. Most existing tools are super complicated, and they don't clearly explain why your score is what it is, which makes it hard to know where to start changing! This project is all about fixing that.
+---
 
-Scope of the Project
+## About
 
-MoodPrint is a simple, rule-based Python tool you run right from the command line (CLI).
+MoodPrint is an educational project for **Introduction to Problem Solving (Python)** course. It asks simple questions about your daily habits and calculates how much CO₂ you produce each month.
 
-Here's what it includes:
+---
 
-It asks you for three key things: transport info, diet habits, and home energy use.
+## Getting Started
 
-It has a cool modular system that calculates your estimated monthly $\text{CO}_2\text{e}$ score.
+### What You Need
+- Python 3.x
 
-It uses smart input validation and error handling so it won't crash when you type something wrong!
+### How to Run
+1. Clone or download this repository
+2. Make sure you have `main.py` and `factors.py` in the same folder
+3. Run the program:
+```bash
+python main.py
+```
 
-It figures out your biggest problem area and gives you personalized advice.
+---
 
-And here's what it doesn't include (keeping it simple!):
+## How It Works
 
-No fancy Graphical User Interface (GUI).
+The program has three parts:
 
-No need for external web APIs or live internet data.
+### 1. Ask Questions
+Asks you about:
+- 🚗 **Transport**: How you commute (car, bus, train, bike, walk)
+- 🍽️ **Diet**: What you eat (meat-heavy, average, vegetarian, vegan)
+- ⚡ **Energy**: Electricity and heating usage
 
-It uses fixed, static emission numbers for its calculations.
+### 2. Do the Math
+Calculates your emissions using these factors:
 
-Target Users
+**Transport** (kg CO₂e per km):
+- Car: 0.2
+- Bus: 0.1
+- Train: 0.05
+- Bike/Walk: 0.0
 
-This tool is totally perfect for students and home users! It's meant for anyone who wants a straightforward, free way to get basic info on their environmental impact and get some clear, actionable suggestions for cutting down emissions.
+**Diet** (kg CO₂e per month):
+- Meat Heavy: 250
+- Average: 150
+- Vegetarian: 100
+- Vegan: 75
 
-High-level Features (The Three Main Jobs)
+**Energy**:
+- Electricity: 0.5 kg CO₂e per kWh
+- Gas Heating: 100 kg CO₂e per month
+- Electric Heating: 80 kg CO₂e per month
 
-The project gets the job done with three main functional modules:
+### 3. Give Advice
+Shows your total score and gives you tips to improve!
 
-Input Profile Generator: This handles all the questions and makes sure all your lifestyle data is valid before moving on.
+---
 
-Emission Factor Calculator: This is the math brain! It runs your profile against a data map (the $\text{EMISSION\_FACTORS}$) to crunch the numbers and give you a $\text{CO}_2\text{e}$ total for each category.
+## Example Output
 
-Impact Report & Suggestions: It prints a clear report with your final scores and gives you a prioritized tip based on the category where you scored highest. Boom!
+```
+🌿 Welcome to MoodPrint!
+
+🚗 TRANSPORT QUESTIONS
+What's your main transport? car
+How many km do you travel by car daily? 10
+
+🍽️ DIET QUESTIONS
+What's your diet type? average
+
+⚡ ENERGY QUESTIONS
+How many kWh of electricity do you use monthly? 200
+What heating do you use? gas
+
+📊 YOUR CARBON FOOTPRINT RESULTS
+
+🚗 Transport:  60.00 kg CO2e/month
+🍽️  Diet:       150.00 kg CO2e/month
+⚡ Energy:     200.00 kg CO2e/month
+
+🌍 TOTAL SCORE: 410.00 kg CO2e/month
+
+⚠️  Your biggest impact area: Energy
+💡 Tip: Switch to LED bulbs and unplug devices when not in use!
+```
+
+---
+
+## Testing
+
+### Crash Prevention Test
+Try to break it! Type words instead of numbers, negative numbers, or wrong options. The program should handle it without crashing.
+
+### Math Check
+**Example**: Car, 1 km daily = 1 × 0.2 × 30 = 6 kg CO₂e ✓
+
+---
+
+## Files
+
+- `main.py` - Main program
+- `factors.py` - Emission factors data
+- `README.md` - This file
+
+---
+
+## Python Skills Used
+
+- Functions
+- Dictionaries and Lists
+- Error handling (try-except)
+- Input validation
+- File imports
+- Calculations
+
+---
+
+## Future Ideas
+
+- Add more transport options
+- Save results to track progress over time
+- Add graphs
+- Compare with friends
+
+---
+
+**Made for Introduction to Problem Solving (Python) course** 🌍
