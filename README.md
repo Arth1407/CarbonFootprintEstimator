@@ -1,71 +1,47 @@
 # CarbonFootprintEstimator
-🌿 MoodPrint: My Carbon Footprint Estimator Project
+🌿 MoodPrint: My Carbon Project!
 
-🧑‍💻 Overview & Goal
+🧑‍💻 What It Is
 
-Hey! This is my project for the Introduction to Problem Solving (Python) course.
+Hey! This is my Introduction to Problem Solving (Python) project.
 
-The main idea is simple: it's hard to track how much CO₂ we actually produce every month. So, this tool helps you figure out your approximate monthly carbon footprint (in kg CO₂e) by asking you a few quick questions about your daily life.
+The goal is easy: it helps you find your monthly pollution score (carbon footprint) just by asking simple questions.
 
-The project mainly uses Python's core features like dictionaries, functions, and loops to calculate the score and give you practical advice.
+The whole project uses basic Python tools: lists, functions, and dictionaries.
 
-✨ Project Features (The 3 Modules)
+✨ What It Does (The 3 Parts)
 
-The whole thing is broken down into three main parts:
+The program has three main jobs:
 
-Input Profile Builder: This is where the program asks you all the questions (commute, diet, etc.). I added some error handling so it doesn't crash if you accidentally type a letter instead of a number!
+Ask Questions: This part takes your input. It has simple code to stop the program from crashing if you type the wrong thing (like a letter instead of a number!).
 
-Emission Factor Calculator: This module takes your answers and uses the data in factors.py to do the actual math. It figures out your score for Transport, Diet, and Energy separately.
+Do the Math: This part uses the numbers in factors.py to calculate your score for Transport, Diet, and Energy.
 
-Impact Report: It prints your final score and, more importantly, tells you which area (Transport, Diet, or Energy) is contributing the most, and gives you a simple tip on how to reduce it.
+Give Advice: It prints your final score, tells you your biggest problem area, and gives you a simple tip to fix it.
 
-🛠️ Tech Used
+🛠️ What I Used
 
-Language: Python 3.x
+Language: Python 3
 
-Key Skills Used: Functions, Dictionaries (lots of them!), Lists, File Handling (implied via data storage), and try/except blocks.
+Skills: Functions, Data Lists (Dictionaries/Lists), File Reading, and basic error-stopping code.
 
-Version Control: Git (of course).
-
-🚀 How to Run It
-
-This is a basic command-line tool, so it's super easy to get running.
-
-Prerequisites
-
-Just make sure you have Python 3 installed on your machine.
-
-1. Grab the Code
-
-git clone [https://github.com/YourUsername/MoodPrint-Carbon-Estimator.git](https://github.com/Arth1407/CarbonFootprintEstimator.git)
-cd MoodPrint-Carbon-Estimator
+Source Control: Git.
 
 
-2. Launch!
+1. Stop the Crash
 
-Run this command from your terminal:
+Test: Try to make it fail (e.g., type a word like banana when asked for distance).
 
-python3 main.py
+Result: It must NOT crash! It should just ask the question again.
+
+2. Check the Math
+
+Test: Make sure the score is correct.
+
+How: Check the numbers in factors.py. (Example: CAR + 1 km daily should equal $6 \text{ kg} \text{ CO}_{2}\text{e}$ monthly).
+
+Result: The program's final number must match your simple math check.
+
+Note: For the official report, see statement.md.
 
 
-✅ Quick Testing Guide
-
-You can easily check two important things:
-
-1. Crash Test (Error Handling)
-
-Goal: Try to break the program.
-
-How: When it asks for a distance (e.g., "commute distance in km"), type something like oops or ten.
-
-What should happen: It should yell at you with an "Error" message and ask the question again, not crash.
-
-2. Logic Test (Calculation)
-
-Goal: Make sure the numbers are right.
-
-How: Look at the factors in factors.py and run a quick score in your head. For example, choose "CAR" and "1 km" daily. The final monthly transport score should be close to $0.20 \text{ kg} \times 1 \text{ km} \times 30 \text{ days} = 6 \text{ kg} \text{ CO}_{2}\text{e}$.
-
-What should happen: The final output should match your manual calculation.
-
-For the Evaluator: Please see statement.md for the formal academic write-up.
