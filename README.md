@@ -28,19 +28,19 @@ Skills: Functions, Data Lists (Dictionaries/Lists), File Reading, and basic erro
 Source Control: Git.
 
 
-1. Stop the Crash
+1. Crash check
 
-Test: Try to make it fail (e.g., type a word like banana when asked for distance).
+Test: Try to make it fail by typing unnecessary things.
 
-Result: It must NOT crash! It should just ask the question again.
+Result: It will not crash! It should just ask the question again.
 
-2. Check the Math
+2. Check Math
 
 Test: Make sure the score is correct.
 
 How: Check the numbers in factors.py. (Example: CAR + 1 km daily should equal $6 \text{ kg} \text{ CO}_{2}\text{e}$ monthly).
 
-Result: The program's final number must match your simple math check.
+Result: The program final result must match your  math check.
 
 Note: For the official report, see statement.md.
 
