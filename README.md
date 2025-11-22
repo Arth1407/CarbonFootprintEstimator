@@ -37,7 +37,7 @@ Just make sure you have Python 3 installed on your machine.
 
 1. Grab the Code
 
-git clone [https://github.com/YourUsername/MoodPrint-Carbon-Estimator.git](https://github.com/Arth1407/MoodPrint-Carbon-Estimator.git)
+git clone [https://github.com/YourUsername/MoodPrint-Carbon-Estimator.git](https://github.com/Arth1407/CarbonFootprintEstimator.git)
 cd MoodPrint-Carbon-Estimator
 
 
