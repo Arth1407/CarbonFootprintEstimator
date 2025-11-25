@@ -1,5 +1,5 @@
-# CarbonFootprintEstimator
-🌿 MoodPrint: My Carbon Project!
+
+# MoodPrint: Personal Carbon Footprint Estimator ☘️
 
 🧑‍💻 What It Is
 
