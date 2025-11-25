@@ -1,6 +1,6 @@
 """
 MoodPrint: Carbon Footprint Estimator
-Introduction to Problem Solving (Python) Project
+Introduction to Problem Solving & Programming (Python) Project
 """
 
 from factors import TRANSPORT_FACTORS, DIET_FACTORS, ENERGY_FACTORS, DAYS_PER_MONTH
