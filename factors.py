@@ -40,7 +40,7 @@ ENERGY_FACTORS = {
         'none': 0         # No heating: 0 emissions
     }
 }
-
+#this was the end of the code
 # Example calculation check:
 # ELECTRICITY: 100 kWh monthly = 100 * 0.5 = 50 kg CO2e
 # GAS HEATING: Fixed at 100 kg CO2e per month
